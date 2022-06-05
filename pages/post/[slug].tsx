@@ -1,8 +1,8 @@
 import { allPosts } from 'contentlayer/generated'
-import BlogLayout from '../../layouts/blog'
+import PostLayout from '../../layouts/post'
 
 const PostPage = ({ post }) => {
-  return <BlogLayout post={post} />
+  return <PostLayout post={post} />
 }
 
 export const getStaticPaths = async () => {

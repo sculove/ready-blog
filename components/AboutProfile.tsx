@@ -1,6 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
-import { AboutProfileContainer, ProfileText, ProfileTextSub, Resume } from './AboutProfile.style'
+import { AboutProfileContainer, ProfileText, ProfileTextSub } from './AboutProfile.style'
 
 const AboutProfile = () => {
   return (
@@ -31,9 +30,6 @@ const AboutProfile = () => {
         </ProfileTextSub>
         <br />
         <br />
-        <Link href="/resume" passHref>
-          <Resume>Resume</Resume>
-        </Link>
       </ProfileText>
     </AboutProfileContainer>
   )

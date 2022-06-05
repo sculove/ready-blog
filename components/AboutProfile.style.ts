@@ -26,17 +26,3 @@ export const ProfileText = styled.div`
 export const ProfileTextSub = styled.span`
   color: var(--tx-sub-dark);
 `
-
-export const Resume = styled.button`
-  padding: 10px 30px;
-  background: var(--bg-sub);
-  color: var(--tx-accent-light);
-  font-weight: 500;
-  border: none;
-  outline: none;
-  border-radius: 10px;
-  cursor: pointer;
-  &:hover {
-    background: var(--tx-accent);
-  }
-`
