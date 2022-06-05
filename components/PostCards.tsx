@@ -5,7 +5,7 @@ import usDateString from '../lib/usDateString'
 
 const PostCards = ({ post, slug }) => {
   return (
-    <Link href={`/blog/${slug}`} passHref>
+    <Link href={`/post/${slug}`} passHref>
       <PostContainer>
         <PostText>
           <PostTitle>{post.title}</PostTitle>

@@ -5,7 +5,7 @@ import metadata from '../data/metadata'
 import Container from '../components/Container'
 import { NextSeo } from 'next-seo'
 
-function BlogLayout({ post }) {
+function PostLayout({ post }) {
   const MDXComponent = useMDXComponent(post.body.code)
   console.log(post.tags)
   return (
@@ -13,10 +13,10 @@ function BlogLayout({ post }) {
       <NextSeo
         title={post.title}
         description={post.description}
-        canonical={`${metadata.meta.url}/blog/${post.slug}`}
+        canonical={`${metadata.meta.url}/post/${post.slug}`}
         openGraph={{
           type: 'article',
-          url: `${metadata.meta.url}/blog/${post.slug}`,
+          url: `${metadata.meta.url}/post/${post.slug}`,
           article: {
             publishedTime: new Date(post.date).toISOString(),
             tags: [...post.tags, 'Frontend', 'Develop'],
@@ -39,4 +39,4 @@ function BlogLayout({ post }) {
   )
 }
 
-export default BlogLayout
+export default PostLayout

@@ -1,7 +1,7 @@
 import {writeFileSync} from 'fs';
 import RSS from 'rss';
 
-import {allBlogs} from '../.contentlayer/generated/allBlogs.mjs';
+import {allPosts} from '../.contentlayer/generated/allPosts.mjs';
 import {allNotes} from '../.contentlayer/generated/allNotes.mjs';
 
 async function generate() {
@@ -11,10 +11,10 @@ async function generate() {
         feed_url: 'https://miryang.dev/feed.xml'
     });
 
-    allBlogs.map((post) => {
+    allPosts.map((post) => {
         feed.item({
             title: post.title,
-            url: `https://miryang.dev/blog/${post.slug}`,
+            url: `https://miryang.dev/post/${post.slug}`,
             date: post.date,
             description: post.description
         });

@@ -1,4 +1,4 @@
-import { allBlogs } from 'contentlayer/generated'
+import { allPosts } from 'contentlayer/generated'
 import BlogLayout from '../../layouts/blog'
 
 const PostPage = ({ post }) => {
@@ -7,13 +7,13 @@ const PostPage = ({ post }) => {
 
 export const getStaticPaths = async () => {
   return {
-    paths: allBlogs.map(p => ({ params: { slug: p.slug } })),
+    paths: allPosts.map(p => ({ params: { slug: p.slug } })),
     fallback: false,
   }
 }
 
 export const getStaticProps = async ({ params }) => {
-  const post = allBlogs.find(p => p.slug === params.slug)
+  const post = allPosts.find(p => p.slug === params.slug)
   return {
     props: {
       post,

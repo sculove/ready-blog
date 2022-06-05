@@ -1,5 +1,5 @@
 import RecentPost from '../components/RecentPost'
-import { allBlogs } from 'contentlayer/generated'
+import { allPosts } from 'contentlayer/generated'
 import { InferGetStaticPropsType } from 'next'
 import Container from '../components/Container'
 import dynamic from 'next/dynamic'
@@ -24,7 +24,7 @@ function Homepage({ posts }: InferGetStaticPropsType<typeof getStaticProps>) {
 }
 
 export const getStaticProps = async () => {
-  const posts = allBlogs.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
+  const posts = allPosts.sort((a, b) => Number(new Date(b.date)) - Number(new Date(a.date)))
   return {
     props: {
       posts,

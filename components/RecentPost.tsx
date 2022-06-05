@@ -6,7 +6,7 @@ const RecentPost = ({ posts }) => {
     <>
       <RecentPostTitle>Recent Post</RecentPostTitle>
       {posts.map(post => (
-        <Link href={`/blog/${post.slug}`} passHref key={post.slug}>
+        <Link href={`/post/${post.slug}`} passHref key={post.slug}>
           <PostCard>
             <PostItlte>{post.title}</PostItlte>
             <PostDescription>{post.description}</PostDescription>

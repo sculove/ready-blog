@@ -39,9 +39,9 @@ export const Note = defineDocumentType(() => ({
   },
 }))
 
-export const Blog = defineDocumentType(() => ({
-  name: 'Blog',
-  filePathPattern: `blog/*.mdx`,
+export const Post = defineDocumentType(() => ({
+  name: 'Post',
+  filePathPattern: `post/*.mdx`,
   contentType: 'mdx',
   fields: {
     title: { type: 'string', required: true },
@@ -67,7 +67,7 @@ export const Blog = defineDocumentType(() => ({
 
 export default makeSource({
   contentDirPath: 'posts',
-  documentTypes: [Blog, Note],
+  documentTypes: [Post, Note],
   mdx: {
     rehypePlugins: [
       rehypeSlug,

@@ -4,7 +4,7 @@ import { PostContainer, PostDate, PostDescription, PostText, PostTitle } from '.
 
 const PostCard = ({ post, slug }) => {
   return (
-    <Link href={`/blog/${slug}`} passHref>
+    <Link href={`/post/${slug}`} passHref>
       <PostContainer>
         <Image
           src={post.thumbnailUrl}
