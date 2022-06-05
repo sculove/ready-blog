@@ -1,13 +1,5 @@
-# Miryang-Nextjs-Blog
-
-> [miryang.dev](https://miryang.dev)
-
-그 어디에서도 원하는 블로그  테마를 찾을 수 없었습니다. 그래서 직접 만들기로 했습니다.  
-I couldn't find the blog theme I wanted. So I decided to make it myself.
-
-Function development will continue.  All ideas are welcomed!
-
-![](https://i.ibb.co/2KMSJmW/miryang-dev.png)
+## 이 블로그는...
+> Next.js 블로그 템플릿을 찾다가 https://github.com/MiryangJung/miryang.dev 블로그가 맘에 들어서 fork 해서 뚝딱뚝딱 만들어 봅니다.
 
 ## Stack
 - Framework `Next.js`
@@ -22,5 +14,3 @@ Function development will continue.  All ideas are welcomed!
 yarn dev
 ```
 
-## Author
-MIT @ [MiryangJung](https://github.com/MiryangJung)

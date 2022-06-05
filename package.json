@@ -1,5 +1,5 @@
 {
-  "name": "miryang-blog",
+  "name": "sculove-blog",
   "private": true,
   "scripts": {
     "dev": "next dev",
